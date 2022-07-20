@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>MicOS</title>
+        <link rel="stylesheet" href="LOGIN.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta http-equiv = "refresh" content = "2.5; url = MAIN.html" />
+
+        
+        <script>
+            setTimeout(()=>{
+                const box = document.getElementById('imgload');
+                box.style.display = 'none';
+                box.style.visibility = 'hidden';
+            }, 1700);
+
+        </script>
+
+    </head>
+
+    <body onLoad="openFullScreen()">
+
+        <div class="preload">
+            <center><img id="imgload" src="apple.gif" height="300px" width="550px" style="padding-top:200px"></center>
+        </div>
+
+<!--
+        <div class="boot">
+        <a href="MAIN.html"><button id="boot-btn" onclick="openFullScreen()">Boot </button></a>
+        <i  class="fa-solid fa-power-off"></i>
+        <img id="boot-img" src="power.png" height="36px" width="36px">
+        </div>
+-->
+
+        <script>
+            
+            //timeout of div
+
+            var elm = document.getElementById("boot-btn");
+            function openFullScreen() {
+                  if(elm.requestFullscreen){
+                     elm.requestFullscreen();
+                }
+            }
+
+           
+
+
+        </script>
+
+    </body>
+</html>
