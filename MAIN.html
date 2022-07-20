@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>MAIN</title>
+        <link rel="stylesheet" href="MAIN.css">
+
+        <style>
+           
+        </style>
+
+    </head>
+    <body class="bg">
+        <div class="login">
+           <center>
+
+                <img src="account.png" id="user_img" height="130px" width="130px">
+                <p id="user" style="color:white;font-size:  20px;font-family:sans-serif;">Athul Nambiar</p>
+
+         
+
+        <a href="DESK.html"><button id="button" onclick="mainFun()">SIGN IN</button></center></a> 
+        </div>
+
+        <script>
+
+
+        //    let btnwal = document.querySelector('#button');
+         //   btnwal.addEventListener('click', ()=>{
+          //      document.body.style.backgroundImage = "url('images/wall2.jpg')";
+           //  }); 
+//
+             
+const btn = document.getElementById('button');
+const bgwal = document.getElementsByClassName('bg');
+
+            function mainFun() {
+                btn.style.display = 'none';
+                btn.style.visibility = 'hidden';
+                bgwal.style.backgroundImage = "url(wallpaper.jpg)";
+            }
+
+        </script>
+
+    </body>
+</html>

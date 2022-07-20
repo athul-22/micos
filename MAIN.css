@@ -1,0 +1,27 @@
+
+ body{
+    background-image: url('wallpaper.jpg');
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    opacity: .5;
+    font-size: 17px;
+    margin-top: 50px;
+
+}
+
+#button:hover{
+    opacity: .6;
+}
+
+
+#user_img{
+    margin-top: 200px;
+}

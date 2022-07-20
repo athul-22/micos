@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="DESK.css">
+        <title>DESKTOP</title>
+
+        <script>
+
+            function clock() {
+                    var clockDiv = document.querySelector("#clock");
+                    return setInterval(() => {
+                    let date = new Date();
+                    let tick = date.toLocaleTimeString();
+                    clockDiv.textContent = tick;
+                }, 1000);
+            }
+        </script>
+
+    </head>
+    <body onload="clock()">
+        
+    <!-- TOP NAV -->  
+
+        <div class="top_nav">
+
+            <div class="app">
+
+                <li> <img src="applelogo.png" height="36px" width="30px" style="padding-left:5px;"> </li> 
+
+                <div class="app_menu">
+
+                <li> <img id="left" src="galarry.png" height="32px" width="32px" style="margin-top:5px;">
+                <p id="right"> Gallary</p> &nbsp;</li>
+            <br>
+                <li> <img id="left" src="safari.png" height="32px" width="32px" style="padding-top:5px;">
+                <p id="right">Safari</p> &nbsp; </li>
+            <br>
+                <li><img id="left" src="music.png" height="32px" width="32px" style="padding-top:5px;">
+                <p id="right"> Apple Play</p> &nbsp; </li>
+            <br>            
+                <li> <img id="left" src="settings.webp" height="32px" width="32px" style="padding-top:5px;">
+                <p id="right"> Settings</p> &nbsp; </li>   
+
+            </div>
+        </div>
+
+        <div class="finder">
+
+            <li id="a" ><a href="#">Finder</a></li>
+
+                <div class="dropdown-content">
+                    <li id="b"><a href="#">Home</a></li><br>
+                    <li id="b"><a href="MAIN.html">Switch User</a></li><br>
+                    <li id="b"><a href="#">Reboot</a></li><br>
+                </div>
+        </div>           
+
+            <li id="a"><a href="#">File</a></li>
+            <li id="a"><a href="#">Edit</a></li>
+            <li id="a"><a href="#">Finder</a></li>
+            <li id="a"><a href="#">Window</a></li>
+            <li id="a"><a href="#">Help</a></li>
+
+       
+
+        <li id="c"><div id="clock"></div></li>
+
+            
+        
+    </div>
+
+        <div class="dock">
+             <img id="dock-img" src="i-finder.png" style="height:45px; width: 45px;padding-top: 10px;padding-left: 15px;">
+             <img id="dock-img" src="message.png" style="height:50px; width: 50px;padding-top: 10px;padding-left: 10px;">
+             <img id="dock-img" src="safari.png"   style="height:52px; width: 52px;padding-top: 10px;padding-left: 10px;">
+             <img id="dock-img" src="map.png" style="height:55px; width: 55px;padding-top: 8px;padding-left: 10px;">
+             <img id="dock-img" src="music.png" style="height:55px; width: 55px;padding-top: 7px;padding-left: 10px;"> 
+             <img id="dock-img" src="galarry.png" style="height:55px; width: 55px; padding-top: 8px;padding-left: 10px;;"> 
+             <img id="dock-img" src="todo.png" style="height:48px; width: 48px ;padding-top: 12px;padding-left: 10px;"> 
+             <img id="dock-img" src="appstore.png" style="height:48px; width: 48px;padding-top: 12px;padding-left: 10px;"> 
+             <img id="dock-img" src="mail.webp" style="height:55px; width: 55px;padding-top: 7px;padding-left: 10px;"> 
+             <img id="dock-img" src="settings.webp" style="height:50px; width: 50px;padding-top: 10px;padding-left: 10px;padding-right:15px"> 
+        </div>
+    </body>
+</html>
